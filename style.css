@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#header {
+    
+    background-color: rgb(231, 228, 228);
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.container {
+    width: 1140px;
+    margin: 0 auto;
+
+}
+.logo {
+    max-width: 250px;
+    padding: 10px;
+}
+.team-name {
+    font-size: 36px;
+    font-family: Roboto, sans-serif;
+    font-weight: 600;
+}
+.bright {
+    color: rgb(38, 38, 112);
+}
+.brains {
+    color: rgb(226, 91, 13);
+}
+.nav-list {
+    display: flex;
+    font-size: 2em;
+    list-style: none;
+    
+}
+.header-link {
+    color: rgb(0, 0, 0);
+}
+
+.header-list-item {
+    margin: 10px;
+    transition: .3s;
+}
+.header-list-item:hover {
+    transform: scale(1.5);
+}
+
+.nav {
+    padding: 10px;
+    margin-right: 20px;
+}
+.members {
+    padding-top: 100px;
+}
+.wrap {
+    position: absolute;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    position: relative;
+    perspective: 1000px;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+.front, .back  {
+position: absolute; 
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1.2s;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+.card:hover .front {transform: rotateY(180deg);
+                     cursor: pointer;}
+.card:hover .back {transform: rotateY(360deg);
+                }
+.back {
+    transform: rotateY(180deg);
+    background-color: rgb(126, 104, 247);
+}
+
+.front4 {
+    background-image: url(img/Nura.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.link-list {
+    list-style: none;
+    font-size: 2em;
+    
+}
+.bio-link {
+    text-decoration: none;
+    color: black;
+}
+.list-item {
+    transition: .3s;
+}
+.list-item:hover {
+    transform: scale(1.5);
+}
