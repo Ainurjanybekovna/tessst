@@ -106,6 +106,13 @@ position: absolute;
     background-size: cover;
 }
 
+.front5 {
+    background-image: url(img/Diana.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .link-list {
     list-style: none;
     font-size: 2em;
